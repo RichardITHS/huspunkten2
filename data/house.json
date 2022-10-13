@@ -1,0 +1,23 @@
+[
+    {
+    "id":"1",
+    "houseName": "Lilla",
+    "size": "90kvm",
+    "price": 199000,
+    "image":"../img/hus1.jpg"
+},
+{
+    "id":"2",
+    "houseName": "Mellan",
+    "size": "120kvm",
+    "price": 499000,
+    "image":"../img/hus2.jpeg"
+},
+{
+    "id":"3",
+    "houseName": "Gigantiska",
+    "size": "500kvm",
+    "price": 1199000,
+    "image":"../img/hus1.jpg"
+}
+]
