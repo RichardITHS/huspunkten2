@@ -1017,7 +1017,7 @@ input{
   color: rgb(6, 111, 139);
   margin-top: 35px;
 }
-#rateOutputId, #monthsOutputId{
+#rateOutputId, #monthOutputId{
   color:black;
 }
 
@@ -1033,5 +1033,4 @@ input{
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
