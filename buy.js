@@ -12,7 +12,7 @@ toggleButton.addEventListener('click', () => {
 
 
 //Fetch house data
-fetch('data/house.json')
+fetch('/data/house.json')
 .then(response => response.json())
 .then(data => {
     console.log(data)

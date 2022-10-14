@@ -54,41 +54,43 @@
       </div>
       
   </section>
+  <!-- Modal (House info)-->
+
+  
   <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Räkna ut din månadskostnad</h5>
-       
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <div id="loancal">
-
-          <h1>Låneberäkning</h1>
-          <div class="input">
-
-            <p>Beräknat lån:</p>
-            <p id="price"></p>
-            <p>Ränta: %</p>
-             <input id="interest_rate" min="0" max="100" value="10" step=".1" onchange="computeLoan()">
-            <p>Månader att betala: </p>
-             <input id="months" type="number" min="1" max="300" value="0" step="1" onchange="{computeLoan()} ">
-           
-           </div>
-           <h2 id="payment"></h2>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Räkna på din boendekostnad</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button"  class="btn btn-secondary" onClick="{order()}" data-dismiss="modal">Beställ</button>
+        <div class="modal-body">
+          <div id="loancal">
+            <h2>Låneberäkning</h2>
+            <div class="input">
+                <p>Beräknat lån:</p>
+                <!-- Nedan id hämtar in värden från JS -->
+                <p id="price"></p>
+                <p>Ränta: %</p>
+                <input type="range" name="rateInputName" id="rateInputId" class="interest_rate" min="0" max="100" value="0" step="1" oninput="rateOutputId.value = rateInputId.value" onchange="{computeLoan()}">
+                <output name="rateOutputName" id="rateOutputId"></output>
+                <p>Månader att betala</p>
+                <input type="range" id="monthInputId" name="monthInputName" class="months" min="0" max="300" value="0" step="1" oninput="monthOutputId.value = monthInputId.value" onchange="{computeLoan()}">
+                <output name="monthOutputName" id="monthOutputId"></output>
+            </div>
+              <!-- Nedan id hämtar in värden från JS -->
+              <h2 id="payment"></h2>
+          </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onClick="{order()}" data-bs-dismiss="modal">Beställ</button>
+        </div>
+       
       </div>
     </div>
   </div>
-</div>
     <!--Footer-->
     <footer>
       <div class="Grid__Container">
