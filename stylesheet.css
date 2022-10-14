@@ -245,7 +245,7 @@ html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/hus1.jpg);
+    url(img/hus1.jpg);
   height: 120vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,7 +310,7 @@ html {
     /*Give the area*/
     grid-area: comment1;
     border-radius: 8px;
-  background-image: url(/img/family.jpg);
+  background-image: url(img/family.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -365,7 +365,7 @@ html {
    /*Give the area*/
    grid-area: comment4;
    border-radius: 8px;
- background-image: url(/img/office-820390_1920.jpg);
+ background-image: url(img/office-820390_1920.jpg);
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
@@ -530,7 +530,7 @@ elements or objects*/
   /*Give the area*/
   grid-area: info1;
   border-radius: 8px;
-background-image: url(/img/jonas-leupe-wlrmQa7Hli8-unsplash.jpg);
+background-image: url(img/jonas-leupe-wlrmQa7Hli8-unsplash.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -578,7 +578,7 @@ background-size: cover;
  /*Give the area*/
  grid-area: info4;
  border-radius: 8px;
-background-image: url(/img/christin-hume-mfB1B1s4sMc-unsplash.jpg);
+background-image: url(img/christin-hume-mfB1B1s4sMc-unsplash.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -598,7 +598,7 @@ background-size: cover;
 .google {
   width: 15vw;
   height: 8vh;
-  background-image: url(/img/google.png);
+  background-image: url(img/google.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
@@ -607,7 +607,7 @@ background-size: cover;
 
 .ios {
   width: 15vw;
-  background-image: url(/img/ios.png);
+  background-image: url(img/ios.png);
   height: 8vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -971,11 +971,9 @@ margin-top:10vh;
    
   }
 
-
 .house-info{
   display: flex;
   justify-content: center;
-  height:70vh;
   width:800px;
   margin-top:20vh;
 }
@@ -988,7 +986,7 @@ margin-top:10vh;
 
 #loancal {
   width: 345px;
-  height: 420px;
+  height: auto;
   background-color:white;
   color: #fff;
   padding: 10px;
@@ -1018,4 +1016,22 @@ input{
   text-align: center;
   color: rgb(6, 111, 139);
   margin-top: 35px;
+}
+#rateOutputId, #monthsOutputId{
+  color:black;
+}
+
+#payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/family.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
